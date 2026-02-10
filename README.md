@@ -8,4 +8,5 @@ Use swagger to test endpoints
 
 Base Link to hosted URL link: https://allforoneapidh-h2cygwchdcbbcsce.westus3-01.azurewebsites.net/
 
-Peer Review(): 
+Peer Review(): Looks like all the endpoints are working perfectly. good job bro.
+
