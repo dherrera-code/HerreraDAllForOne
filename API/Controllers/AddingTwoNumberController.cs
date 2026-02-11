@@ -16,8 +16,8 @@ namespace API.Controllers
         {
             _addTwoNums = addTwoNums;
         }
-        
-        [HttpGet("/{num1}/{num2}")]
+        //api/AddingTwoNumber/2/3
+        [HttpGet("adding/{num1}/{num2}")]
         public string AddTwoNumbers(int num1, int num2)
         {
             return _addTwoNums.AddTwoNumbers(num1,num2);
