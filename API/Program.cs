@@ -17,6 +17,15 @@ builder.Services.AddScoped<Magic8BallService>();
 builder.Services.AddScoped<RestaurantPickerService>();
 builder.Services.AddScoped<GuessItService>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Client", policy =>
+    {
+        policy.WithOrigins("http://localhost:5500","http://127.0.0.1:5500","http://localhost:5173/")
+        .AllowAnyHeader().AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -27,6 +36,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("Client");
 
 app.UseAuthorization();
 
