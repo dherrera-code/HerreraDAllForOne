@@ -7,7 +7,7 @@ namespace API.Services
 {
     public class OddOrEvenService
     {
-        public string OddOrEven(int num)
+        public string OddOrEven(long num)
         {
             // if(int.TryParse(num, out int number))
             if(num % 2 == 0)
