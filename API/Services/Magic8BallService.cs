@@ -11,7 +11,7 @@ namespace API.Services
         {
             if (!question.Trim().Contains("?"))
             {
-                return "Your question needs to contain a ?";
+                return "Your question needs to contain a question mark";
             }
             int randomNum = Random.Shared.Next(1, 11);
             switch (randomNum)

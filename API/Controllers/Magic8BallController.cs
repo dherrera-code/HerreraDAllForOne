@@ -16,7 +16,7 @@ namespace API.Controllers
         {
             _magicBall = magicball;
         }
-        [HttpGet("/AskAQuestion")]
+        [HttpGet("/AskAQuestion/{question}")]
         public string Magic8Ball(string question)
         {
             return _magicBall.Magic8Ball(question);
