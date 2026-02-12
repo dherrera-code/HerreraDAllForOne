@@ -9,10 +9,7 @@ namespace API.Services
     {
         public string Magic8Ball(string question)
         {
-            if (!question.Trim().Contains("?"))
-            {
-                return "Your question needs to contain a question mark";
-            }
+            if(question == "") return "Pleas input a question!";
             int randomNum = Random.Shared.Next(1, 11);
             switch (randomNum)
             {
