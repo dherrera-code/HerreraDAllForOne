@@ -17,6 +17,7 @@ builder.Services.AddScoped<Magic8BallService>();
 builder.Services.AddScoped<RestaurantPickerService>();
 builder.Services.AddScoped<GuessItService>();
 builder.Services.AddScoped<GreaterOrLessService>();
+builder.Services.AddScoped<MadLibShortService>();
 
 builder.Services.AddCors(options =>
 {
