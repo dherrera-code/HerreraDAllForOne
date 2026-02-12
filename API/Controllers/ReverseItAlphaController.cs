@@ -16,7 +16,7 @@ namespace API.Controllers
         {
             _reverseIt = reverseIt;
         }
-        [HttpGet("reverseItAlpha/{sequenceAlpha}")]
+        [HttpGet("{sequenceAlpha}")]
         public string ReverseItAlpha(string sequenceAlpha)
         {
             return _reverseIt.ReverseItAlpha(sequenceAlpha);

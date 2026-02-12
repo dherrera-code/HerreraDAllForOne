@@ -16,7 +16,7 @@ namespace API.Controllers
         {
             _oddOrEven = oddOrEven;
         }
-        [HttpGet("Number/{number}")]
+        [HttpGet("{number}")]
         public string OddOrEven(long number)
         {
             return _oddOrEven.OddOrEven(number);
