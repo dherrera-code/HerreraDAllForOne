@@ -9,7 +9,7 @@ namespace API.Services
     {
         public string ReverseItNums(string sequence)
         {
-            if(sequence.Length < 2) return "Invalid Input: Please enter more than one number!";
+            if(sequence.Length < 2) return "Invalid Input: Please enter a number with more than one digit!";
             if(!long.TryParse(sequence, out long numbers))
             {
                 return "Invalid Input: Please enter a sequence of numbers only";
