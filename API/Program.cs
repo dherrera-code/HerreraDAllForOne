@@ -23,7 +23,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("Client", policy =>
     {
-        policy.WithOrigins("http://localhost:5500","http://127.0.0.1:5500","http://localhost:5173","https://white-island-0ac32031e.1.azurestaticapps.net")
+        policy.WithOrigins("http://localhost:5500","http://127.0.0.1:5500","http://localhost:5173","https://white-island-0ac32031e.1.azurestaticapps.net","http://localhost:3000")
         .AllowAnyHeader().AllowAnyMethod();
     });
 });
