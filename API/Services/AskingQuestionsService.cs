@@ -9,7 +9,7 @@ namespace API.Services
     {
         public string TwoQuestions(string name, string time)
         {
-            return $"Your name is {name} and you woke up at {time}!";
+            return $"Your name is {name} and you woke up at {time} today!";
         }
     }
 }
